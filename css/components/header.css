@@ -1,0 +1,154 @@
+/* шапка    */
+
+.header {
+    background: #131415;
+    height: 75px;
+}
+.header_left, .header_right, .header_center {
+    float: left;
+    width: 33%;
+}
+.header_left {
+    padding: 25px 0;
+}
+.header_right {
+    text-align: right;
+    /* margin-top: 12px; */
+    padding-top: 12px;
+}
+.header_center{
+    text-align: center;
+    height: 75px;
+}
+.logo-text{
+    color: #f89513;
+    font-family: 'GoraFree';
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+.nav-menu {
+    list-style: none; /*убрать точки */
+    padding: 0%     ;
+
+}
+.nav-menu__item {
+    float: left;
+    width: 33%;
+    margin-left: 0px;
+}
+.nav-menu__link{
+    text-decoration: none; /*убрать подчеркивание в ссылке */
+    display: inline-block;
+}
+.nav-menu__icon, .nav-menu__text {
+    float: left;
+    width: 50%;
+}
+.nav-menu__icon {
+    margin-top: 11px;
+    margin-right: 10px;
+    width: 23px;
+    height: 23px;
+}
+.nav-menu__link:hover .nav-menu__text  {
+    color: #f89513;
+}
+.none  {
+    display: none;
+}
+.nav-menu__link:hover .none  {
+    display: inline-block;
+}
+.nav-menu__link:hover .not_none  {
+    display: none;
+}
+
+
+.nav-menu__text {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+}
+.active  .nav-menu__text{
+    color: #f89513;
+}
+.active  .none{
+    display: inline-block;
+}
+.active  .not_none{
+    display: none;
+}
+.contacts {
+    display: inline-block;
+}
+.contacts__phone {
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.contacts__schedule {
+    font-size: 14px;
+    color: #c77814;
+    opacity: .7;
+    display: block;
+}
+/* выпадашка */
+.drop {
+    position: relative;
+}
+.drop:hover .dropdown {
+    left: 0;
+}
+.drop:hover .contacts__schedule {
+    color: #b9b9b9;
+}
+
+.dropdown {
+    position: absolute;
+    left: -9999px;
+    
+}
+.drop-block {
+    width: 163px;
+    height: 81px;
+    z-index: 20;
+    border-radius: 10px;
+    border: 1px ;
+    margin-top: 20px;
+    opacity: 0.949;
+    box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55);  /* гардиент бордера */
+    position: relative;
+    padding: 18px 0;
+}
+.triangle {
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px ;
+    border-right: 1px ;
+    box-shadow: -7px -8px 6px -6px rgba(23, 59, 117, 0.55);  
+    position: absolute;
+    transform: rotate(45deg);
+    left: 75%;
+    bottom: 80%;
+    background: white;
+}
+.drop-block p {
+    font-family: 'OpenSans';
+    font-weight: bold;
+    font-size: 14px;
+    color : #f89513;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.drop-block b {
+    font-family: 'OpenSans';
+    font-weight: 300;
+    font-size: 14px;
+    color : #221f1f;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
